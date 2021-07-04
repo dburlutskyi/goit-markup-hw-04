@@ -1,0 +1,410 @@
+:root {
+  --main-font: "Roboto", sans-serif;
+  --secondary-font: "Raleway", sans-serif;
+  --basic-color: #212121;
+  --accent-color: #2196f3;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.border {
+  border-bottom: 1px solid #eeeeee;
+  box-sizing: border-box;
+}
+
+/*===Header==*/
+
+.header {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.page-header {
+  border-bottom: 1px solid #ececec;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.logo-text {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  /* identical to box height */
+  letter-spacing: 0.03em;
+  color: #000000;
+  margin-right: 93px;
+}
+
+.logo-color {
+  color: #2196f3;
+}
+
+.menu-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: #212121;
+}
+
+.menu-link.current {
+  color: var(--accent-color);
+}
+.menu-link:hover,
+.menu-link:focus {
+  color: var(--accent-color);
+}
+
+.menu-item {
+  margin-right: 50px;
+}
+
+.menu-header-contacts {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.menu-header-contacts-email {
+  padding-right: 50px;
+}
+
+.header-contacts {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: #757575;
+  padding-left: ; /*==150;==*/
+}
+
+.header-contacts:hover,
+.header-contacts:focus {
+  color: var(--accent-color);
+}
+
+/*====END HEADER====*/
+
+/*====HEROUS====*/
+
+.herous-background {
+  background: #2f303a;
+}
+
+.main-slogan {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  /* or 136% */
+  text-align: center;
+  text-align: wrap;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.modal-btn {
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: hidden;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  /* identical to box height, or 187% */
+  display: flex;
+  align-items: center;
+  padding: 10px 32px;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+
+  color: #ffffff;
+}
+
+/*====END HEROUS====*/
+
+/*====MAIN SECTION====*/
+
+/*====FEATURES SECTION====*/
+
+.features-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+}
+
+.features-list-item {
+  flex-basis: calc(100% / 4 - 30px);
+  margin-left: 30px;
+  margin-top: 94px;
+}
+
+.features-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #212121;
+}
+
+.features-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  /* or 171% */
+  letter-spacing: 0.03em;
+  margin-top: 10px;
+
+  color: #757575;
+}
+
+/*====END FEATURES SECTION====*/
+
+/*====WHAT WE ARE DOING====*/
+.activity-list {
+  display: flex;
+  margin-left: -30px;
+  margin-top: -50px;
+}
+
+.activity-list-item {
+  flex-basis: calc((100%-90px) / 3);
+  margin-left: 30px;
+  margin-top: 50px;
+}
+
+.activity {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+  margin-top: 94px;
+
+  color: #212121;
+}
+
+/*====OUR TEAM SECTION====*/
+
+.employees {
+  background-color: #f5f4fa;
+}
+
+.masters-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -50px;
+}
+
+.masters-list-item {
+  flex-basis: calc((100% - 120px) / 4);
+  margin-left: 30px;
+  margin-top: 50px;
+}
+
+.our-team-tittle {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+  margin-top: 94px;
+
+  color: #212121;
+}
+
+.our-team-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  /* identical to box height */
+  text-align: center;
+  letter-spacing: 0.03em;
+  padding-top: 30px;
+
+  color: #212121;
+}
+
+.our-team-post {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18;
+  /* identical to box height */
+  text-align: center;
+  letter-spacing: 0.03em;
+  padding-top: 10px;
+
+  color: #757575;
+}
+
+/*====END OUR TEAM SECTION====*/
+
+/*==PORTFOLIO MAIN==*/
+
+.buttons-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 94px;
+}
+
+.border {
+  border-bottom: 1px solid #eeeeee;
+  box-sizing: border-box;
+}
+
+.images-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: -50px;
+  margin-left: -30px;
+}
+
+.images-list-item {
+  flex-basis: calc((100%-90px) / 3 - 30px);
+  padding-top: 50px;
+  margin-left: 30px;
+}
+
+.portfolio-list-btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  /* identical to box height, or 162% */
+  text-align: center;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  background: #f5f4fa;
+  border-radius: 4px;
+  border: hidden;
+  color: var(--basic-color);
+  margin-left: 8px;
+  padding: 6px 22px;
+}
+
+.portfolio-list-btn:hover,
+.portfolio-list-btn:focus {
+  background-color: var(--accent-color);
+  color: #ffffff;
+}
+
+.portfolio-tittle {
+  margin-top: 20px;
+  height: 36px;
+}
+
+.portfolio-item-text {
+  padding-top: 4px;
+  margin-bottom: 94px;
+}
+
+/*==END PORTFOLIO MAIN==*/
+
+/*====FOOTER====*/
+
+.footer-bg {
+  background: #2f303a;
+}
+
+.text-footer {
+  margin-top: 94px;
+  padding-top: 60px;
+}
+
+.info-footer {
+  margin-top: 20px;
+}
+
+.info-footer-item:not(:last-child) {
+  padding-bottom: 9px;
+}
+
+.logo-text-footer {
+  font-family: var(--secondary-font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  /* identical to box height */
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+
+.footer-adress-color {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  /* or 171% */
+  letter-spacing: 0.03em;
+
+  color: #ffffff;
+}
+
+.footer-contacts {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  /* or 171% */
+  letter-spacing: 0.03em;
+  margin-top: 20px;
+
+  color: rgba(255, 255, 255, 0.6);
+}
